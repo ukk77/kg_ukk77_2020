@@ -5,6 +5,14 @@ import sys
 
 
 def main():
+    """
+    The main function takes two command line arguments, converts them to lower case and checks
+    if every character in string input 1 uniquely maps to every character in string input 2.
+    :return: -
+    """
+    if len(sys.argv) != 3:
+        print("usage: python3 main.py [arg1] [arg2]")
+        sys.exit()
     s1 = sys.argv[1]
     s2 = sys.argv[2]
     if len(s1) == len(s2):
